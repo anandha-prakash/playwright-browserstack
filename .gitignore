@@ -3,3 +3,5 @@ local.log
 .idea
 test-results
 dist
+allure-results
+allure-report
