@@ -3,6 +3,7 @@ import * as base from '@playwright/test';
 import { Category } from '@pages/category.page';
 import { Product } from '@pages/product.page';
 import { isBstack } from '@utils/env';
+import { allure } from 'allure-playwright';
 const BrowserStackLocal = require('browserstack-local');
 require('dotenv').config();
 
@@ -39,6 +40,8 @@ export const test = base.test.extend<myPages>({
         if (isBstack) {
             const bstackPage = await browser.newPage(testInfo.project.use);
             await Browserstack.setSessionName(bstackPage, testInfo);
+            const session = await Browserstack.getSessionDetails(bstackPage)
+            allure.link({name: 'BROWSERSTACK LINK FOR THE TEST', url: session.public_url});
             await use(bstackPage);
             await Browserstack.setTestResult(bstackPage, testInfo);
             await bstackPage.close();

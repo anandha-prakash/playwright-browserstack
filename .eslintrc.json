@@ -27,7 +27,7 @@
         "block-spacing": "warn",
         "object-curly-spacing": ["warn", "always"],
         "semi": "error",
-        "quotes": ["warn", "single"],
+        "quotes": ["error", "single"],
         "eol-last": ["error", "always"],
         "@typescript-eslint/no-var-requires": 0,
         "no-useless-escape": "off",

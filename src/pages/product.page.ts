@@ -8,7 +8,6 @@ export class Product {
         this.page = page;
     }
 
-    get header()            { return this.page.locator('.HugeSummaryBannerComponent h1'); }
-    get compareTitle()      { return this.page.locator('[data-testid="readMore"] h2'); }
+    get header()            { return this.page.locator('[aria-current="location"]'); }
 
 }

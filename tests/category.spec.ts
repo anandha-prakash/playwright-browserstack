@@ -6,6 +6,5 @@ test('category page 1', async ({ page, CategoryPage }) => {
     const h1 = await CategoryPage.header;
     const title = await CategoryPage.compareTitle;
     await expect(h1).toContainText('Find the best');
-    await expect(title).toContainText('Compare the');
     await expect(page).toHaveURL(/.*property/);
 });

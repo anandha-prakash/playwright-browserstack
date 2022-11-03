@@ -26,12 +26,10 @@ test.describe('Serial mode tests 2', () => {
     });
 
     test('2', async ({ }) => {
-        await page.goto('https://www.softwareadvice.com/crm/salesforce-profile/?automated=true&gtm=false');
+        await page.goto('https://www.softwareadvice.com/crm/hubspot-profile/?automated=true&gtm=false');
         const h1 = await ProductPage.header;
-        const title = await ProductPage.compareTitle;
-        await expect(h1).toContainText('Salesforce Sales Cloud');
-        await expect(title).toContainText('Salesforce Sales Cloud');
-        await expect(page).toHaveURL(/.*salesforce/);
+        await expect(h1).toContainText('HubSpot CRM');
+        await expect(page).toHaveURL(/.*hubspot/);
     });
 
     test.afterAll(async () => {

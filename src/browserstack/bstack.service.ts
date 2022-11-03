@@ -37,7 +37,8 @@ export default class BstackService {
     }
 
     public async getSessionDetails(page) {
-        return  await page.evaluate(() => {}, 'browserstack_executor: {"action": "getSessionDetails"}');
+        const session =   await page.evaluate(() => {}, 'browserstack_executor: {"action": "getSessionDetails"}');
+        return  JSON.parse(session);
     }
 
 }
