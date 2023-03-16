@@ -16,7 +16,7 @@ const config: PlaywrightTestConfig = {
     retries: process.env.CI ? 2 : 0,
     workers: process.env.CI ? 1 : undefined,
     use: {
-        baseURL: 'http://localhost:3000' || process.env.URL,
+        baseURL: 'https://www.softwareadvice.com' || process.env.URL,
         actionTimeout: 0,
         navigationTimeout: 60*1000,
         headless: false,

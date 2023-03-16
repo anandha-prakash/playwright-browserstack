@@ -7,7 +7,7 @@ export default class BstackService {
 
     public setBstackBuildCaps(project) {
         this.caps = browsers[project.name];
-        this.caps['build'] = process.env.BROWSERSTACK_BUILD || 'local-pw-builds';
+        this.caps['build'] = process.env.BROWSERSTACK_BUILD || 'anand-playwright-builds';
         this.caps['browserstack.local'] = process.env.BROWSERSTACK_LOCAL || false;
     }
 

@@ -19,7 +19,7 @@ export const browsers = {
         browser: 'chrome',
         browser_version: 'latest',
         os: 'osx',
-        os_version: 'Monterey',
+        os_version: 'Ventura',
         ...credentials,
         ...common_capabilities
     },
@@ -27,7 +27,7 @@ export const browsers = {
         browser: 'playwright-firefox',
         browser_version: 'latest',
         os: 'osx',
-        os_version: 'Monterey',
+        os_version: 'Ventura',
         ...credentials,
         ...common_capabilities
     },
@@ -35,7 +35,7 @@ export const browsers = {
         browser: 'playwright-webkit',
         browser_version: 'latest',
         os: 'osx',
-        os_version: 'Monterey',
+        os_version: 'Ventura',
         ...credentials,
         ...common_capabilities
     },
@@ -51,7 +51,7 @@ export const browsers = {
         browser: 'playwright-webkit',
         browser_version: 'latest',
         os: 'osx',
-        os_version: 'Monterey',
+        os_version: 'Ventura',
         ...credentials,
         ...common_capabilities
     },
@@ -59,7 +59,7 @@ export const browsers = {
         browser: 'chrome',
         browser_version: 'latest',
         os: 'osx',
-        os_version: 'Monterey',
+        os_version: 'Ventura',
         ...credentials,
         ...common_capabilities
     },

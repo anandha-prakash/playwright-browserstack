@@ -41,7 +41,7 @@ export const test = base.test.extend<myPages>({
             const bstackPage = await browser.newPage(testInfo.project.use);
             await Browserstack.setSessionName(bstackPage, testInfo);
             const session = await Browserstack.getSessionDetails(bstackPage)
-            allure.link({name: 'BROWSERSTACK LINK FOR THE TEST', url: session.public_url});
+            allure.link(session.public_url, 'BROWSERSTACK LINK FOR THE TEST');
             await use(bstackPage);
             await Browserstack.setTestResult(bstackPage, testInfo);
             await bstackPage.close();
