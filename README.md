@@ -11,9 +11,10 @@ BROWSERSTACK_ACCESS_KEY=""
 
 1. Clone the repo
 2. Run `yarn install`
-3. Run `yarn local` to run all projects and specs locally
-4. Run `yarn bstack` to run all projects and specs in browserstack
-5. Run `yarn bstack:local` to run all projects and specs in browserstack and browesrstack local.
+3. Run `yarn local:ui` to run the tests using UI Mode.
+4. Run `yarn local` to run all projects and specs locally
+5. Run `yarn bstack` to run all projects and specs in browserstack
+6. Run `yarn bstack:local` to run all projects and specs in browserstack and browesrstack local.
 
 - you can pass 
   - `--project chrome` to run the tests only in chrome

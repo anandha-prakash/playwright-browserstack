@@ -12,12 +12,14 @@
     "cli-color": "^2.0.3",
     "dotenv": "^16.0.3",
     "eslint": "^8.36.0",
+    "playwright": "^1.32.0",
     "typescript": "^4.9.5"
   },
   "scripts": {
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "tsc": "tsc -p tsconfig.json",
+    "local:ui": "PWBSTACK=false npx playwright test --ui",
     "local": "PWBSTACK=false npx playwright test",
     "bstack": "PWBSTACK=true npx playwright test",
     "bstack:local": "BROWSERSTACK_LOCAL=true PWBSTACK=true npx playwright test"
